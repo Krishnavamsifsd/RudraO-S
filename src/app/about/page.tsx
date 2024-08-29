@@ -80,7 +80,7 @@ const AboutPage = () => {
 </section>
 
       <AboutSectionOne />
-      <AboutSectionTwo />
+      {/* <AboutSectionTwo /> */}
     </>
   );
 };

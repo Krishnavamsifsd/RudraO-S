@@ -5,7 +5,9 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
+import Milestone from "@/components/Milestone";
 import Testimonials from "@/components/Testimonials";
+import TimeLine from "@/components/Timeline";
 import Video from "@/components/Video";
 import { Metadata } from "next";
 
@@ -25,7 +27,8 @@ export default function Home() {
       <Video />
       {/* <AboutSectionTwo /> */}
       <Testimonials />
-      <Blog />
+      <Milestone />
+      <TimeLine />
       <Contact />
     </>
   );

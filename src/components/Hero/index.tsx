@@ -44,25 +44,25 @@ const Hero = () => {
     </p>
     <div className="flex flex-col items-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
       <Link href="/about">
-        <div className="flex items-center rounded-full bg-yellow-400 px-6 py-3 text-lg font-semibold text-blue-900 transition duration-300 ease-in-out hover:bg-yellow-500 shadow-lg transform hover:scale-105">
-          <span>About Us</span>
-          <svg
-            className="ml-2 h-5 w-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M14 5l7 7m0 0l-7 7m7-7H3"
-            ></path>
-          </svg>
-        </div>
+      <div className="flex items-center rounded-full bg-gradient-to-r from-blue-500 to-purple-500 px-6 py-3 text-lg font-semibold text-white transition duration-300 ease-in-out hover:from-blue-600 hover:to-purple-600 shadow-lg transform hover:scale-105">
+  <span>About Us</span>
+  <svg
+    className="ml-2 h-5 w-5"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M14 5l7 7m0 0l-7 7m7-7H3"
+    ></path>
+  </svg>
+</div>
       </Link>
-      <Link href="/services">
+      <Link href="/about/services">
         <div className="bg-blue-700 hover:bg-blue-800 flex items-center rounded-full px-6 py-3 text-lg font-semibold text-white transition duration-300 ease-in-out shadow-lg transform hover:scale-105">
           <span>Our Services</span>
           <svg

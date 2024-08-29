@@ -1,7 +1,6 @@
 import { Testimonial } from "@/types/testimonial";
 import SectionTitle from "../Common/SectionTitle";
-import SingleTestimonial from "./SingleTestimonial";
-
+import TestmonialCarousel from "./TestimonialCarousel"
 const testimonialData: Testimonial[] = [
   {
     id: 1,
@@ -42,11 +41,13 @@ const Testimonials = () => {
           center
         />
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+        {/* <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           {testimonialData.map((testimonial) => (
             <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
           ))}
-        </div>
+        </div> */}
+
+<TestmonialCarousel />
       </div>
       <div className="absolute right-0 top-5 z-[-1]">
         <svg

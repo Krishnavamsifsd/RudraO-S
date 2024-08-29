@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 const ContactPage = () => {
   return (
     <>
-      <Breadcrumb
-        pageName="Contact Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
-      />
+ <Breadcrumb
+  pageName="Contact Us"
+  description="Get in touch with Rudra Overseas for all your study abroad needs. Our team is here to assist you with your queries and provide guidance on your journey to studying overseas."
+/> 
 
       <Contact />
     </>
