@@ -1,18 +1,19 @@
 import React from "react";
+import Image from 'next/image';
 
 const AboutUs = () => {
   return (
     <>
-      <br />
-      <br />
+    <br />
+    <br />
       <div className="bg-gray-100 py-12 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
         <div className="container mx-auto px-4">
-          <section className="mb-12">
-            <h2 className="mb-6 text-center text-4xl font-extrabold">
+          <section className="mb-12 text-center">
+            <h2 className="mb-6 text-4xl font-extrabold text-blue-600 dark:text-blue-400">
               About Rudra Overseas
             </h2>
-            <p className="mx-auto max-w-3xl text-center text-lg leading-relaxed">
-              We’re The Trusted Educational Consultant. Rudra Overseas is the flag
+            <p className="mx-auto max-w-3xl text-lg leading-relaxed">
+              We&apos;re The Trusted Educational Consultant. Rudra Overseas is the flag
               bearer in the fields of test preparation, study abroad programmes,
               and immigration services. As an emerging leader in test
               preparation, Rudra Overseas takes pride in our high success rate.
@@ -23,7 +24,7 @@ const AboutUs = () => {
           </section>
 
           <section className="mb-12">
-            <h3 className="mb-4 text-3xl font-bold">Our Values</h3>
+            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400">Our Values</h3>
             <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {[
                 "Trust",
@@ -34,16 +35,16 @@ const AboutUs = () => {
               ].map((value, index) => (
                 <li
                   key={index}
-                  className="rounded-lg bg-white p-6 shadow-md dark:bg-gray-800"
+                  className="rounded-lg bg-white p-6 shadow-md dark:bg-gray-800 transition transform hover:scale-105"
                 >
-                  <h4 className="text-xl font-semibold">{value}</h4>
+                  <h4 className="text-xl font-semibold text-blue-600 dark:text-blue-400">{value}</h4>
                 </li>
               ))}
             </ul>
           </section>
 
           <section className="mb-12">
-            <h3 className="mb-4 text-3xl font-bold">More Details</h3>
+            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400">More Details</h3>
             <p className="mb-6 text-lg leading-relaxed">
               With increasing attribution over incredible educational and
               employment opportunities abroad, the ratio of aspirants dreaming
@@ -62,19 +63,21 @@ const AboutUs = () => {
               students aspiring education abroad.
             </p>
             <p className="mb-6 text-lg leading-relaxed">
-              As a part of the aspirant's overseas education journey, we take
+              As a part of the aspirant&apos;s overseas education journey, we take
               charge of everything right from advising on course selection and
               applications, to helping him get the right visa. Our qualified
               admission experts will stand up for you in taking the most
               important and critical decision you will ever make in your life.
             </p>
-            <img
-              src="aboutus-pic1.jpg"
+            <Image
+              src="/aboutus-pic1.jpg"
               alt="About Us"
+              width={800}
+              height={600}
               className="mb-6 h-auto w-full rounded-lg shadow-md"
             />
             <p className="mb-6 text-lg leading-relaxed">
-              We’ve developed persistent working relationships with our
+              We&apos;ve developed persistent working relationships with our
               university partners and offer scholarships to deserving students
               to help offset their costs of studying overseas. Rudra Overseas is
               the fastest emerging leader in the overseas education services.
@@ -97,7 +100,7 @@ const AboutUs = () => {
           </section>
 
           <section className="mb-12">
-            <h3 className="mb-4 text-3xl font-bold">Vision</h3>
+            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400">Vision</h3>
             <p className="mb-6 text-lg leading-relaxed">
               Our vision is to provide quality service to every abroad aspirant
               and grow to be leading light in Test-prep, Student Admissions.
@@ -105,7 +108,7 @@ const AboutUs = () => {
           </section>
 
           <section className="mb-12">
-            <h3 className="mb-4 text-3xl font-bold">Mission</h3>
+            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400">Mission</h3>
             <p className="mb-6 text-lg leading-relaxed">
               We aim to reformulate the notion of studying abroad into a
               pragmatic view and handy to every aspirant in India by making it
@@ -114,9 +117,9 @@ const AboutUs = () => {
           </section>
 
           <section className="mb-12">
-            <h3 className="mb-4 text-3xl font-bold">Integrity</h3>
+            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400">Integrity</h3>
             <p className="mb-6 text-lg leading-relaxed">
-              We will not compromise on our individual or organization’s
+              We will not compromise on our individual or organization&apos;s
               integrity for any reason. We will hold ourselves to the highest
               ethical standards in all of our dealings, both within and outside
               the organization.
@@ -124,7 +127,7 @@ const AboutUs = () => {
           </section>
 
           <section className="mb-12">
-            <h3 className="mb-4 text-3xl font-bold">Values</h3>
+            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400">Values</h3>
             <p className="mb-6 text-lg leading-relaxed">
               We never compromise in delivering appropriate information and
               required procedure to the students. This remained as the impelling
@@ -135,7 +138,7 @@ const AboutUs = () => {
           </section>
 
           <section className="mb-12">
-            <h3 className="mb-4 text-3xl font-bold">
+            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400">
               Happy to serve our Students!
             </h3>
             <p className="mb-6 text-lg leading-relaxed">
@@ -157,7 +160,7 @@ const AboutUs = () => {
               team of diverse set of experiences and backgrounds, we are united
               by organizational vision of maintaining stakeholder satisfaction
               in the forefront and deliver premium best test prep and admissions
-              services. We pride ourselves on our strategic, integrated &
+              services. We pride ourselves on our strategic, integrated &amp;
               personalized approach to marketing and the results it delivers.
             </p>
             <p className="mb-6 text-lg leading-relaxed">
@@ -167,45 +170,53 @@ const AboutUs = () => {
           </section>
 
           <section className="mb-12">
-            <h3 className="mb-4 text-3xl font-bold">Achievements</h3>
+            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400">Achievements</h3>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              <div className="rounded-lg bg-white p-6 shadow-md dark:bg-gray-800">
-                <img
-                  src="icon1.png"
+              <div className="rounded-lg bg-white p-6 shadow-md dark:bg-gray-800 transition transform hover:scale-105">
+                <Image
+                  src="/icon1.png"
                   alt="Achievement 1"
+                  width={48}
+                  height={48}
                   className="mb-4 h-12 w-12"
                 />
-                <h4 className="text-xl font-semibold">
+                <h4 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
                   Representing over 300 International Universities
                 </h4>
               </div>
-              <div className="rounded-lg bg-white p-6 shadow-md dark:bg-gray-800">
-                <img
-                  src="icon2.png"
+              <div className="rounded-lg bg-white p-6 shadow-md dark:bg-gray-800 transition transform hover:scale-105">
+                <Image
+                  src="/icon2.png"
                   alt="Achievement 2"
+                  width={48}
+                  height={48}
                   className="mb-4 h-12 w-12"
                 />
-                <h4 className="text-xl font-semibold">
+                <h4 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
                   High Visa Success rate
                 </h4>
               </div>
-              <div className="rounded-lg bg-white p-6 shadow-md dark:bg-gray-800">
-                <img
-                  src="icon3.png"
+              <div className="rounded-lg bg-white p-6 shadow-md dark:bg-gray-800 transition transform hover:scale-105">
+                <Image
+                  src="/icon3.png"
                   alt="Achievement 3"
+                  width={48}
+                  height={48}
                   className="mb-4 h-12 w-12"
                 />
-                <h4 className="text-xl font-semibold">
+                <h4 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
                   Rapid Branch proliferation in short period of time
                 </h4>
               </div>
-              <div className="rounded-lg bg-white p-6 shadow-md dark:bg-gray-800">
-                <img
-                  src="icon4.png"
+              <div className="rounded-lg bg-white p-6 shadow-md dark:bg-gray-800 transition transform hover:scale-105">
+                <Image
+                  src="/icon4.png"
                   alt="Achievement 4"
+                  width={48}
+                  height={48}
                   className="mb-4 h-12 w-12"
                 />
-                <h4 className="text-xl font-semibold">
+                <h4 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
                   Team of 300+ experienced industry professionals
                 </h4>
               </div>
