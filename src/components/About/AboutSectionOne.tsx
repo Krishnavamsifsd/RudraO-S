@@ -10,9 +10,9 @@ const checkIcon = (
 const AboutSectionOne = () => {
   const List = ({ text }) => (
     <p className="mb-5 flex items-center text-lg font-medium text-white">
-<span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary border border-gray-400">
-  {checkIcon}
-</span>
+      <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary border border-gray-400">
+        {checkIcon}
+      </span>
       {text}
     </p>
   );
@@ -72,6 +72,11 @@ const AboutSectionOne = () => {
             rgba(255, 255, 255, 0.2),
             rgba(255, 255, 255, 0)
           );
+        }
+        @media (max-width: 768px) {
+          .absolute.inset-0.z-0.h-[50vh] {
+            height: 100vh;
+          }
         }
       `}</style>
     </section>

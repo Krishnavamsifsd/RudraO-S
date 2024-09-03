@@ -1,14 +1,16 @@
 import React from "react";
-import Image from 'next/image';
+import { FaUniversity, FaPassport, FaChartLine, FaUsers } from 'react-icons/fa';
 
 const AboutUs = () => {
   return (
-    <>
-    <br />
-    <br />
-      <div className="bg-gray-100 py-12 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+    <div className="relative">
+      <div
+        className="fixed inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url('https://img.freepik.com/premium-photo/graduating-studying-abroad-international-concept_996201-28394.jpg?ga=GA1.1.2054148804.1721838972&semt=ais_hybrid')" }}
+      ></div>
+      <div className="relative bg-gray-100 bg-opacity-90 py-12 text-gray-900 dark:bg-gray-900 dark:bg-opacity-90 dark:text-gray-100 mt-16">
         <div className="container mx-auto px-4">
-          <section className="mb-12 text-center">
+          <section className="mb-16 text-center">
             <h2 className="mb-6 text-4xl font-extrabold text-blue-600 dark:text-blue-400">
               About Rudra Overseas
             </h2>
@@ -23,8 +25,8 @@ const AboutUs = () => {
             </p>
           </section>
 
-          <section className="mb-12">
-            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400">Our Values</h3>
+          <section className="mb-16">
+            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400 text-center">Our Values</h3>
             <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {[
                 "Trust",
@@ -43,8 +45,8 @@ const AboutUs = () => {
             </ul>
           </section>
 
-          <section className="mb-12">
-            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400">More Details</h3>
+          <section className="mb-16">
+            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400 text-center">More Details</h3>
             <p className="mb-6 text-lg leading-relaxed">
               With increasing attribution over incredible educational and
               employment opportunities abroad, the ratio of aspirants dreaming
@@ -69,13 +71,7 @@ const AboutUs = () => {
               admission experts will stand up for you in taking the most
               important and critical decision you will ever make in your life.
             </p>
-            <Image
-              src="/aboutus-pic1.jpg"
-              alt="About Us"
-              width={800}
-              height={600}
-              className="mb-6 h-auto w-full rounded-lg shadow-md"
-            />
+            <div className="mb-6 h-auto w-full rounded-lg shadow-md bg-cover bg-center" style={{ backgroundImage: "url('/aboutus-pic1.jpg')" }}></div>
             <p className="mb-6 text-lg leading-relaxed">
               We&apos;ve developed persistent working relationships with our
               university partners and offer scholarships to deserving students
@@ -99,26 +95,26 @@ const AboutUs = () => {
             </p>
           </section>
 
-          <section className="mb-12">
-            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400">Vision</h3>
-            <p className="mb-6 text-lg leading-relaxed">
+          <section className="mb-16">
+            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400 text-center">Vision</h3>
+            <p className="mb-6 text-lg leading-relaxed text-center">
               Our vision is to provide quality service to every abroad aspirant
               and grow to be leading light in Test-prep, Student Admissions.
             </p>
           </section>
 
-          <section className="mb-12">
-            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400">Mission</h3>
-            <p className="mb-6 text-lg leading-relaxed">
+          <section className="mb-16">
+            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400 text-center">Mission</h3>
+            <p className="mb-6 text-lg leading-relaxed text-center">
               We aim to reformulate the notion of studying abroad into a
               pragmatic view and handy to every aspirant in India by making it
               more affordable without any weighty processes.
             </p>
           </section>
 
-          <section className="mb-12">
-            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400">Integrity</h3>
-            <p className="mb-6 text-lg leading-relaxed">
+          <section className="mb-16">
+            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400 text-center">Integrity</h3>
+            <p className="mb-6 text-lg leading-relaxed text-center">
               We will not compromise on our individual or organization&apos;s
               integrity for any reason. We will hold ourselves to the highest
               ethical standards in all of our dealings, both within and outside
@@ -126,9 +122,9 @@ const AboutUs = () => {
             </p>
           </section>
 
-          <section className="mb-12">
-            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400">Values</h3>
-            <p className="mb-6 text-lg leading-relaxed">
+          <section className="mb-16">
+            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400 text-center">Values</h3>
+            <p className="mb-6 text-lg leading-relaxed text-center">
               We never compromise in delivering appropriate information and
               required procedure to the students. This remained as the impelling
               cause for our matchless achievements in this cutthroat field. Our
@@ -137,16 +133,16 @@ const AboutUs = () => {
             </p>
           </section>
 
-          <section className="mb-12">
-            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400">
+          <section className="mb-16">
+            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400 text-center">
               Happy to serve our Students!
             </h3>
-            <p className="mb-6 text-lg leading-relaxed">
+            <p className="mb-6 text-lg leading-relaxed text-center">
               In the view of fact that Seeking for abroad education has become
               more complex and over informative for a student to choose the
               right one.
             </p>
-            <p className="mb-6 text-lg leading-relaxed">
+            <p className="mb-6 text-lg leading-relaxed text-center">
               A Cordial commitment to give our students a seamless experience
               and furnish the most effective procedure has been our driving
               force since outset and will always be. We bring in new approach to
@@ -154,7 +150,7 @@ const AboutUs = () => {
               that reinforce students to a whole new level and also aggregates
               best approach towards standardized tests for abroad education.
             </p>
-            <p className="mb-6 text-lg leading-relaxed">
+            <p className="mb-6 text-lg leading-relaxed text-center">
               Our ability to deliver outstanding results for the students starts
               with our team of smart and capable experts. Although we have a
               team of diverse set of experiences and backgrounds, we are united
@@ -163,59 +159,35 @@ const AboutUs = () => {
               services. We pride ourselves on our strategic, integrated &amp;
               personalized approach to marketing and the results it delivers.
             </p>
-            <p className="mb-6 text-lg leading-relaxed">
+            <p className="mb-6 text-lg leading-relaxed text-center">
               Our holistic and integral experience in the international domain
               makes attaining your overseas dreams as easy as falling off a log.
             </p>
           </section>
 
-          <section className="mb-12">
-            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400">Achievements</h3>
+          <section className="mb-16">
+            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400 text-center">Achievements</h3>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
               <div className="rounded-lg bg-white p-6 shadow-md dark:bg-gray-800 transition transform hover:scale-105">
-                <Image
-                  src="/icon1.png"
-                  alt="Achievement 1"
-                  width={48}
-                  height={48}
-                  className="mb-4 h-12 w-12"
-                />
+                <FaUniversity className="text-blue-600 dark:text-blue-400 text-4xl mb-4" />
                 <h4 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
                   Representing over 300 International Universities
                 </h4>
               </div>
               <div className="rounded-lg bg-white p-6 shadow-md dark:bg-gray-800 transition transform hover:scale-105">
-                <Image
-                  src="/icon2.png"
-                  alt="Achievement 2"
-                  width={48}
-                  height={48}
-                  className="mb-4 h-12 w-12"
-                />
+                <FaPassport className="text-blue-600 dark:text-blue-400 text-4xl mb-4" />
                 <h4 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
                   High Visa Success rate
                 </h4>
               </div>
               <div className="rounded-lg bg-white p-6 shadow-md dark:bg-gray-800 transition transform hover:scale-105">
-                <Image
-                  src="/icon3.png"
-                  alt="Achievement 3"
-                  width={48}
-                  height={48}
-                  className="mb-4 h-12 w-12"
-                />
+                <FaChartLine className="text-blue-600 dark:text-blue-400 text-4xl mb-4" />
                 <h4 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
                   Rapid Branch proliferation in short period of time
                 </h4>
               </div>
               <div className="rounded-lg bg-white p-6 shadow-md dark:bg-gray-800 transition transform hover:scale-105">
-                <Image
-                  src="/icon4.png"
-                  alt="Achievement 4"
-                  width={48}
-                  height={48}
-                  className="mb-4 h-12 w-12"
-                />
+                <FaUsers className="text-blue-600 dark:text-blue-400 text-4xl mb-4" />
                 <h4 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
                   Team of 300+ experienced industry professionals
                 </h4>
@@ -224,7 +196,7 @@ const AboutUs = () => {
           </section>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

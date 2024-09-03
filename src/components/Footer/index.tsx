@@ -211,6 +211,7 @@ const Footer = () => {
   &copy; {new Date().getFullYear()} Rudra Overseas. All rights reserved.
 </p>
           </div>
+          
         </div>
         <div className="absolute right-0 top-14 z-[-1]">
           <svg

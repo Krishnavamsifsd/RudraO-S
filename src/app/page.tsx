@@ -12,7 +12,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Rudra Overseas - Your Gateway to Global Education and Careers",
-  description: "Explore new horizons with Rudra Overseas. Embark on a journey to world-class education and global career opportunities.",
+  description: "Explore new horizons with Rudra Overseas. npmEmbark on a journey to world-class education and global career opportunities.",
   // other metadata
 };
 
