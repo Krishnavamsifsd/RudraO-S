@@ -34,7 +34,7 @@ const GREPage = () => {
         <section className="mb-12">
           <h2 className="text-xl md:text-2xl font-bold mb-4">What is GRE Exam?</h2>
           <p className="text-gray-700 text-sm md:text-base leading-relaxed max-w-4xl">
-            The Graduate Record Examinations (GRE) is a standardized test that is an enrollment requirement for many graduate schools overseas. It assesses candidates' analytical writing, quantitative ability, and verbal reasoning skills.
+            The Graduate Record Examinations (GRE) is a standardized test that is an enrollment requirement for many graduate schools overseas. It assesses candidates analytical writing, quantitative ability, and verbal reasoning skills.
           </p>
         </section>
 
@@ -115,7 +115,7 @@ const GREPage = () => {
             <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <FaCheckCircle className="text-blue-600 text-2xl md:text-3xl mb-4" />
               <h3 className="text-lg md:text-xl font-semibold mb-2">Regular Progress Assessments</h3>
-              <p className="text-gray-700 text-sm md:text-base">Regular assessments to track students' progress, identifying areas for improvement and positive feedback.</p>
+              <p className="text-gray-700 text-sm md:text-base">Regular assessments to track students progress, identifying areas for improvement and positive feedback.</p>
             </div>
             <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <FaUniversity className="text-blue-600 text-2xl md:text-3xl mb-4" />
