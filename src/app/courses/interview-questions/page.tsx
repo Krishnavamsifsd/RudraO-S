@@ -1,5 +1,5 @@
 "use client";
-import { FiHelpCircle } from 'react-icons/fi';
+import { FiHelpCircle } from "react-icons/fi";
 
 const questions = [
   "Which course will you be undertaking in your master's program?",
@@ -33,18 +33,27 @@ const InterviewQuestions = () => {
           F-1 Student Visa Interview Questions
         </h2>
         <p className="mb-12 text-center text-lg text-gray-700">
-          Securing an F-1 student visa is an important part of studying in the United States. To increase your chances of success, it's essential to prepare for the interview questions you may be asked.
+          Securing an F-1 student visa is an important part of studying in the
+          United States. To increase your chances of success, it&apos;s
+          essential to prepare for the interview questions you may be asked.
         </p>
         <p className="mb-12 text-center text-lg text-gray-700">
-          There are no shortcuts to passing your US visa interview. It requires thorough preparation, much like your university application and the other components of the visa process. To get ready, practice answering potential interview questions you might face at the American embassy for your student visa.
+          There are no shortcuts to passing your US visa interview. It requires
+          thorough preparation, much like your university application and the
+          other components of the visa process. To get ready, practice answering
+          potential interview questions you might face at the American embassy
+          for your student visa.
         </p>
         <p className="mb-8 text-center text-xl font-semibold text-blue-900">
           Here are some common F-1 student visa interview questions:
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {questions.map((question, index) => (
-            <div key={index} className="relative bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
-              <div className="absolute top-0 right-0 -mt-4 -mr-4 bg-blue-900 text-white rounded-full p-2">
+            <div
+              key={index}
+              className="relative transform rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:-translate-y-1 hover:shadow-xl"
+            >
+              <div className="absolute right-0 top-0 -mr-4 -mt-4 rounded-full bg-blue-900 p-2 text-white">
                 <FiHelpCircle size={24} />
               </div>
               <p className="text-gray-700">{question}</p>

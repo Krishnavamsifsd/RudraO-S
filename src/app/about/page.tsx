@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import { FaCheckCircle } from "react-icons/fa";
 import aboutUs from "../../../public/images/about/aboutUs.jpg";
 import Image from "next/image";
-import { FiEye, FiTarget } from 'react-icons/fi';
+import { FiEye, FiTarget } from "react-icons/fi";
 
 export const metadata: Metadata = {
   title: "About Us | Rudra Overseas",
@@ -51,7 +51,7 @@ const AboutPage = () => {
                 In September 2023, Rudra Overseas Educational Consultancy opened
                 its first location in Guntur and second in Kothagudem and now in
                 Nerseropeta in Andhra Pradesh. In the past, our tiny team
-                focused solely on meeting the demands of the Guntur city's
+                focused solely on meeting the demands of the Guntur city&apos;s
                 student population. We now have the honour of providing services
                 to the student population in Andhra Pradesh.
               </p>
@@ -61,46 +61,46 @@ const AboutPage = () => {
       </section>
 
       <section className="bg-white py-16 md:py-20 lg:py-28">
-  <div className="container mx-auto px-4">
-    <div className="flex items-center justify-center mb-8">
-      <FiEye className="text-blue-900 mr-2" size={32} />
-      <h2 className="text-center text-4xl font-bold text-blue-900">
-        Our Vision
-      </h2>
-    </div>
-    <div className="flex flex-col items-center">
-      <p className="mb-6 max-w-2xl text-center text-lg italic text-gray-700">
-        "To be a global leader in educational consultancy, empowering
-        students to achieve their academic and professional dreams by
-        providing exceptional guidance, resources, and support for
-        international studies."
-      </p>
-    </div>
-  </div>
-</section>
+        <div className="container mx-auto px-4">
+          <div className="mb-8 flex items-center justify-center">
+            <FiEye className="mr-2 text-blue-900" size={32} />
+            <h2 className="text-center text-4xl font-bold text-blue-900">
+              Our Vision
+            </h2>
+          </div>
+          <div className="flex flex-col items-center">
+            <p className="mb-6 max-w-2xl text-center text-lg italic text-gray-700">
+              &quot;To be a global leader in educational consultancy, empowering
+              students to achieve their academic and professional dreams by
+              providing exceptional guidance, resources, and support for
+              international studies.&quot;
+            </p>
+          </div>
+        </div>
+      </section>
 
-<section className="bg-gradient-to-r from-blue-50 to-blue-100 py-16 md:py-20 lg:py-28">
-  <div className="container mx-auto px-4">
-    <div className="flex items-center justify-center mb-8">
-      <FiTarget className="text-blue-900 mr-2" size={32} />
-      <h2 className="text-center text-4xl font-bold text-blue-900">
-        Our Mission
-      </h2>
-    </div>
-    <div className="flex flex-col items-center">
-      <p className="mb-6 max-w-2xl text-center text-lg text-gray-700">
-        "Our mission is to inspire and assist students in pursuing
-        world-class education abroad by offering personalized counseling,
-        expert guidance, and comprehensive services. We strive to simplify
-        the application process, ensure successful admissions, and support
-        students in their journey towards academic excellence and global
-        career opportunities. Through integrity, dedication, and
-        innovation, we aim to bridge the gap between students and top
-        educational institutions worldwide."
-      </p>
-    </div>
-  </div>
-</section>
+      <section className="bg-gradient-to-r from-blue-50 to-blue-100 py-16 md:py-20 lg:py-28">
+        <div className="container mx-auto px-4">
+          <div className="mb-8 flex items-center justify-center">
+            <FiTarget className="mr-2 text-blue-900" size={32} />
+            <h2 className="text-center text-4xl font-bold text-blue-900">
+              Our Mission
+            </h2>
+          </div>
+          <div className="flex flex-col items-center">
+          <p className="mb-6 max-w-2xl text-center text-lg text-gray-700">
+  &quot;Our mission is to inspire and assist students in pursuing
+  world-class education abroad by offering personalized counseling,
+  expert guidance, and comprehensive services. We strive to simplify
+  the application process, ensure successful admissions, and support
+  students in their journey towards academic excellence and global
+  career opportunities. Through integrity, dedication, and
+  innovation, we aim to bridge the gap between students and top
+  educational institutions worldwide.&quot;
+</p>
+          </div>
+        </div>
+      </section>
 
       <section className="bg-white py-12 md:py-16 lg:py-20">
         <div className="container mx-auto px-4">
