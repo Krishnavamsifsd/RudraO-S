@@ -11,6 +11,7 @@ const menuData = [
       { title: "Duolingo", path: "/courses/duolingo" },
       { title: "GRE", path: "/courses/gre" },
       { title: "TOEFL", path: "/courses/toefl" },
+      { title: "Interview Questions", path: "/courses/interview-questions" },
     ],
   },
   {

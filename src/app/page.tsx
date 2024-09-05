@@ -9,6 +9,7 @@ import Testimonials from "@/components/Testimonials";
 import TimeLine from "@/components/Timeline";
 import Video from "@/components/Video";
 import { Metadata } from "next";
+import FAQ from "./faq/page";
 
 export const metadata: Metadata = {
   title: "Rudra Overseas - Your Gateway to Global Education and Careers",
@@ -28,6 +29,7 @@ export default function Home() {
       <Testimonials />
       <Milestone />
       <TimeLine />
+      <FAQ />
       <Contact />
     </>
   );

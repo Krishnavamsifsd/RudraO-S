@@ -13,6 +13,27 @@ const Header = () => {
     setNavbarOpen(!navbarOpen);
   };
 
+  const [width, setWidth] = useState(50);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setWidth(40);
+      } else {
+        setWidth(50);
+      }
+    };
+
+    // Initial check
+    handleResize();
+
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   // Sticky Navbar
   const [sticky, setSticky] = useState(true);
   // const handleStickyNavbar = () => {
@@ -43,7 +64,7 @@ const Header = () => {
       <header
         className={`header left-0 top-0 z-40 flex w-full items-center ${
           sticky
-            ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
+            ? "fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition dark:bg-gray-dark dark:shadow-sticky-dark"
             : "absolute bg-transparent"
         }`}
       >
@@ -53,23 +74,25 @@ const Header = () => {
               <Link
                 href="/"
                 className={`header-logo block w-full ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
-                } `}
+                  sticky ? "py-2 lg:py-1" : "py-4 lg:py-2"
+                }`}
               >
                 <Image
-                  src="/images/logo/rudralogo.png"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="w-full dark:hidden"
+                  src="/images/logo/rudralogo.jpeg"
+                  alt="Rudra Overseas Logo"
+                  width={width}
+                  height={60}
+                  className="h-auto w-auto rounded-md dark:hidden"
+                  priority
                 />
                 {/* <Image
-                  src="/images/logo/logo.svg"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="hidden w-full dark:block"
-                /> */}
+    src="/images/logo/rudralogo-dark.jpeg"
+    alt="Rudra Overseas Logo"
+    width={120}
+    height={120}
+    className="hidden h-auto w-auto dark:block"
+    priority
+  /> */}
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">
@@ -159,14 +182,14 @@ const Header = () => {
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-              <Link
-  href="/enquiry"
-  className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-8 py-3 text-base font-medium text-white transition duration-300 transform hover:scale-105 md:block md:px-9 lg:px-6 xl:px-9"
->
-  Enquiry Now
-</Link>
-</div>
-                {/* <div>
+                <Link
+                  href="/enquiry"
+                  className="ease-in-up hidden transform rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-8 py-3 text-base font-medium text-white shadow-btn transition duration-300 hover:scale-105 hover:shadow-btn-hover md:block md:px-9 lg:px-6 xl:px-9"
+                >
+                  Enquiry Now
+                </Link>
+              </div>
+              {/* <div>
                   <ThemeToggler />
                 </div> */}
             </div>
