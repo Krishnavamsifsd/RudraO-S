@@ -2,8 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image'; 
 import grandLaunch from "../../../public/images/launch/GrandLaunch.jpeg";
+import { CSSProperties } from 'react';
 
-const GrandLaunch = () => {
+const GrandLaunch: React.FC = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(true); 
 
   // Function to close the popup
@@ -16,7 +17,7 @@ const GrandLaunch = () => {
   }, []);
 
   // Inline styles for the popup
-  const popupStyles = {
+  const popupStyles: CSSProperties = {
     position: 'fixed',
     top: '6%', // Adjust this value for the desired gap from the top
     left: '50%',
@@ -30,7 +31,7 @@ const GrandLaunch = () => {
     zIndex: 50,
   };
 
-  const contentStyles = {
+  const contentStyles: CSSProperties = {
     position: 'relative',
     backgroundColor: 'white',
     padding: '20px',
@@ -41,7 +42,7 @@ const GrandLaunch = () => {
     overflow: 'auto',
   };
 
-  const buttonStyles = {
+  const buttonStyles: CSSProperties = {
     position: 'absolute',
     top: '10px',
     right: '10px',
@@ -53,7 +54,7 @@ const GrandLaunch = () => {
     cursor: 'pointer',
   };
 
-  const imageWrapperStyles = {
+  const imageWrapperStyles: CSSProperties = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
