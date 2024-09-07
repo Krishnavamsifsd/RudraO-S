@@ -11,6 +11,7 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 import FAQ from "./faq/page";
 import GrandLaunch from "@/components/GrandLaunch";
+import WhatsAppIcon from "@/components/Common/WhatsappBot";
 
 export const metadata: Metadata = {
   title: "Rudra Overseas - Your Gateway to Global Education and Careers",

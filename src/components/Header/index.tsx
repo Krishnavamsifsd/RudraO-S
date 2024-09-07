@@ -5,10 +5,15 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import ModalForm from "../Common/ModelForm";
 
 const Header = () => {
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   const navbarToggleHandler = () => {
     setNavbarOpen(!navbarOpen);
   };
@@ -61,6 +66,7 @@ const Header = () => {
 
   return (
     <>
+          <ModalForm open={open} onClose={handleClose} />
       <header
         className={`header left-0 top-0 z-40 flex w-full items-center ${
           sticky
@@ -70,31 +76,30 @@ const Header = () => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-60 max-w-full px-4 xl:mr-12">
-              <Link
-                href="/"
-                className={`header-logo block w-full ${
-                  sticky ? "py-2 lg:py-1" : "py-4 lg:py-2"
-                }`}
-              >
-                <Image
-                  src="/images/logo/rudralogo.jpeg"
-                  alt="Rudra Overseas Logo"
-                  width={width}
-                  height={60}
-                  className="h-auto w-auto rounded-md dark:hidden"
-                  priority
-                />
-                {/* <Image
-    src="/images/logo/rudralogo-dark.jpeg"
-    alt="Rudra Overseas Logo"
-    width={120}
-    height={120}
-    className="hidden h-auto w-auto dark:block"
-    priority
-  /> */}
-              </Link>
-            </div>
+          <div className="w-100 max-w-full px-4 xl:mr-12">
+  <Link
+    href="/"
+    className={`header-logo block w-full ${
+      sticky ? "py-2 lg:py-1" : "py-4 lg:py-2"
+    }`}
+  >
+    <div className="flex items-center">
+      <Image
+        src="/images/logo/rudralogo.jpeg"
+        alt="Rudra Overseas Logo"
+        width={width}
+        height={60}
+        className="h-auto w-auto rounded-md dark:hidden"
+        priority
+      />
+     <p className="ml-2 text-xs text-gray-600 dark:text-gray-400 font-semibold tracking-wide capitalize">
+  Let us show you the world
+</p>
+
+    </div>
+  </Link>
+</div>
+
             <div className="flex w-full items-center justify-between px-4">
               <div>
                 <button
@@ -168,7 +173,7 @@ const Header = () => {
                                 <Link
                                   href={submenuItem.path}
                                   key={index}
-                                  className="block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-white/70 dark:hover:text-white lg:px-3"
+                                  className="font-semibold block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-white/70 dark:hover:text-white lg:px-3"
                                 >
                                   {submenuItem.title}
                                 </Link>
@@ -181,9 +186,9 @@ const Header = () => {
                   </ul>
                 </nav>
               </div>
-              <div className="flex items-center justify-end pr-16 lg:pr-0">
+              <div className="flex items-center justify-end pr-16 lg:pr-0" onClick={() => setOpen(true)}>
                 <Link
-                  href="/enquiry"
+                  href=""
                   className="ease-in-up hidden transform rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-8 py-3 text-base font-medium text-white shadow-btn transition duration-300 hover:scale-105 hover:shadow-btn-hover md:block md:px-9 lg:px-6 xl:px-9"
                 >
                   Enquiry Now
