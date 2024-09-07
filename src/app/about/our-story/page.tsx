@@ -1,5 +1,5 @@
 import React from "react";
-import { FaUniversity, FaPassport, FaChartLine, FaUsers } from 'react-icons/fa';
+import { FaUniversity, FaPassport, FaChartLine, FaUsers, FaMapMarkerAlt } from 'react-icons/fa';
 
 const AboutUs = () => {
   return (
@@ -53,13 +53,13 @@ const AboutUs = () => {
               to study abroad or Migration is puffing with every passing day.
             </p>
             <p className="mb-6 text-lg leading-relaxed">
-              We started with a mission in 2013 to lend a hand to such young and
+              We started with a mission in 2023 to lend a hand to such young and
               ambitious students with a pellucid clarity of the international
               universities and educational institutions that offer courses and
               post-study prospects that best suit requirements and spheres of
               interest. We offer comprehensive classroom training for tests such
               as the GMAT®, GRE®, SAT®, TOEFL™, IELTS™ and PTE. Rudra
-              Overseas partners with more than 300 universities throughout the
+              Overseas partners with more than 1000+ universities throughout the
               world to assist in test preparation, admissions and visa
               counselling thereby becoming the one stop solution for the
               students aspiring education abroad.
@@ -82,12 +82,28 @@ const AboutUs = () => {
               we take care of all the paperwork.
             </p>
             <p className="mb-6 text-lg leading-relaxed">
-              We have 28 centers spread over 16 cities in India and this figure
-              is set to rise in nearing years. Every centre follows an unvarying
-              curriculum and has outstanding faculty, all of whom are trained in
-              our head office with the same teaching standards by the master
-              trainers.
-            </p>
+  We have 3 centers spread across cities in India, and this figure
+  is set to rise in the coming years. Every center follows a consistent
+  curriculum and boasts outstanding faculty, all of whom are trained
+  at our head office by master trainers, ensuring the same high teaching
+  standards across locations.
+</p>
+
+<div className="mb-6">
+  <p className="mb-4 text-xl font-bold text-blue-600 dark:text-blue-400">Our Centers</p>
+  <div className="space-y-4">
+    <div className="p-4 bg-white shadow-lg rounded-lg flex items-center dark:bg-gray-800 hover:shadow-xl transition transform hover:scale-105">
+      <FaMapMarkerAlt className="text-blue-600 dark:text-blue-400 text-3xl mr-4" />
+      <span className="text-lg font-semibold text-gray-700 dark:text-gray-300">Guntur</span>
+    </div>
+    <div className="p-4 bg-white shadow-lg rounded-lg flex items-center dark:bg-gray-800 hover:shadow-xl transition transform hover:scale-105">
+      <FaMapMarkerAlt className="text-blue-600 dark:text-blue-400 text-3xl mr-4" />
+      <span className="text-lg font-semibold text-gray-700 dark:text-gray-300">Narsaropet <span className="text-sm text-gray-500">(launch)</span></span>
+    </div>
+  </div>
+</div>
+
+
             <p className="mb-6 text-lg leading-relaxed">
               Rudra Overseas is focused predominantly developing innovative
               solutions to bring Abroad Education more accessible and attainable
@@ -166,34 +182,35 @@ const AboutUs = () => {
           </section>
 
           <section className="mb-16">
-            <h3 className="mb-4 text-3xl font-bold text-blue-600 dark:text-blue-400 text-center">Achievements</h3>
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              <div className="rounded-lg bg-white p-6 shadow-md dark:bg-gray-800 transition transform hover:scale-105">
-                <FaUniversity className="text-blue-600 dark:text-blue-400 text-4xl mb-4" />
-                <h4 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
-                  Representing over 300 International Universities
-                </h4>
-              </div>
-              <div className="rounded-lg bg-white p-6 shadow-md dark:bg-gray-800 transition transform hover:scale-105">
-                <FaPassport className="text-blue-600 dark:text-blue-400 text-4xl mb-4" />
-                <h4 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
-                  High Visa Success rate
-                </h4>
-              </div>
-              <div className="rounded-lg bg-white p-6 shadow-md dark:bg-gray-800 transition transform hover:scale-105">
-                <FaChartLine className="text-blue-600 dark:text-blue-400 text-4xl mb-4" />
-                <h4 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
-                  Rapid Branch proliferation in short period of time
-                </h4>
-              </div>
-              <div className="rounded-lg bg-white p-6 shadow-md dark:bg-gray-800 transition transform hover:scale-105">
-                <FaUsers className="text-blue-600 dark:text-blue-400 text-4xl mb-4" />
-                <h4 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
-                  Team of 300+ experienced industry professionals
-                </h4>
-              </div>
-            </div>
-          </section>
+  <h3 className="mb-8 text-3xl font-bold text-blue-600 dark:text-blue-400 text-center">Achievements</h3>
+  <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+  <div className="bg-white p-8 shadow-lg dark:bg-gray-800 transition transform hover:scale-105 rounded-xl">
+  <FaUniversity className="text-blue-600 dark:text-blue-400 text-5xl mb-4 mx-auto" />
+      <h4 className="text-lg font-semibold text-blue-600 dark:text-blue-400 text-center">
+        Representing over 1000+ International Universities
+      </h4>
+    </div>
+    <div className="rounded-xl bg-white p-8 shadow-lg dark:bg-gray-800 transition transform hover:scale-105">
+      <FaPassport className="text-blue-600 dark:text-blue-400 text-5xl mb-4 mx-auto" />
+      <h4 className="text-lg font-semibold text-blue-600 dark:text-blue-400 text-center">
+        High Visa Success rate
+      </h4>
+    </div>
+    <div className="rounded-xl bg-white p-8 shadow-lg dark:bg-gray-800 transition transform hover:scale-105">
+      <FaChartLine className="text-blue-600 dark:text-blue-400 text-5xl mb-4 mx-auto" />
+      <h4 className="text-lg font-semibold text-blue-600 dark:text-blue-400 text-center">
+        Rapid Branch proliferation in short period of time
+      </h4>
+    </div>
+    <div className="rounded-xl bg-white p-8 shadow-lg dark:bg-gray-800 transition transform hover:scale-105">
+      <FaUsers className="text-blue-600 dark:text-blue-400 text-5xl mb-4 mx-auto" />
+      <h4 className="text-lg font-semibold text-blue-600 dark:text-blue-400 text-center">
+        Team of 10 experienced industry professionals
+      </h4>
+    </div>
+  </div>
+</section>
+
         </div>
       </div>
     </div>
