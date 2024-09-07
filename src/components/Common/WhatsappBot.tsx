@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import ModalForm from './ModelForm';
+import Image from 'next/image';
+import whatsappLogo from '../../../public/images/logo/WhatsApp.svg'
 
 const WhatsAppIcon: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -12,6 +14,7 @@ const WhatsAppIcon: React.FC = () => {
     bottom: '20px',
     left: '20px',
     zIndex: 1000,
+    width : "65px"
   };
 
   const imgStyle: React.CSSProperties = {
@@ -22,15 +25,17 @@ const WhatsAppIcon: React.FC = () => {
 
   return (
     <>
-      <div style={iconStyle}>
-        <a onClick={handleOpen} style={{ cursor: 'pointer' }}>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-            alt="WhatsApp Bot"
-            style={imgStyle}
-          />
-        </a>
-      </div>
+       <div style={iconStyle}>
+      <a onClick={handleOpen} style={{ cursor: 'pointer', display: 'block' }}>
+        <Image
+          src={whatsappLogo}
+          alt="WhatsApp Bot"
+          layout="responsive"
+          width={50} // Aspect ratio width
+          height={50} // Aspect ratio height
+        />
+      </a>
+    </div>
       <ModalForm open={open} onClose={handleClose} />
     </>
   );

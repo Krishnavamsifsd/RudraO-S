@@ -71,8 +71,9 @@ const AboutUs = () => {
       We started with a mission in 2023 to lend a hand to such young and ambitious students with a clear understanding of the international universities and educational institutions that offer courses and post-study prospects that best suit their requirements and interests. We offer comprehensive classroom training for tests such as GMAT®, GRE®, SAT®, TOEFL™, IELTS™, and PTE. Rudra Overseas partners with more than 1000+ universities worldwide to assist in test preparation, admissions, and visa counselling, making us a one-stop solution for students aspiring to study abroad.
     </p>
     <p className="mb-6 text-lg leading-relaxed text-gray-800 dark:text-gray-300">
-      As part of the aspirant's overseas education journey, we handle everything from advising on course selection and applications to helping with the right visa. Our qualified admission experts will support you in making the most important and critical decision of your life.
-    </p>
+  As part of the aspirant&apos;s overseas education journey, we handle everything from advising on course selection and applications to helping with the right visa. Our qualified admission experts will support you in making the most important and critical decision of your life.
+</p>
+
     <div
       className="mb-6 h-auto w-full rounded-lg bg-cover bg-center shadow-md"
       style={{ backgroundImage: "url('/aboutus-pic1.jpg')" }}
@@ -138,11 +139,12 @@ const AboutUs = () => {
     Integrity
   </h3>
   <p className="mb-6 text-lg leading-relaxed text-gray-800 dark:text-gray-300">
-    We will not compromise on our individual or organization's
-    integrity for any reason. We will hold ourselves to the highest
-    ethical standards in all of our dealings, both within and outside
-    the organization.
-  </p>
+  We will not compromise on our individual or organization&apos;s
+  integrity for any reason. We will hold ourselves to the highest
+  ethical standards in all of our dealings, both within and outside
+  the organization.
+</p>
+
 </section>
 
 <section className="mb-16">
