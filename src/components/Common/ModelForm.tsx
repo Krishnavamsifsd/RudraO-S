@@ -11,17 +11,17 @@ const ModalForm: React.FC<{ open: boolean; onClose: () => void }> = ({ open, onC
 
   const handleSubmit = () => {
     // Construct the message
-    const message = `Hello, a new user has submitted their details:%0A%0AName: ${name}%0AEmail: ${email}%0AMobile: ${mobile}%0APincode: ${pincode}`;
-  
+    const message = `Hello, a new user has submitted their details:\n\nName: ${name}\nEmail: ${email}\nMobile: ${mobile}\nPincode: ${pincode}`;
+    
     // Encode the message for the URL
     const encodedMessage = encodeURIComponent(message);
-  
+    
     // Construct the WhatsApp URL
     const whatsappURL = `https://wa.me/919885234150?text=${encodedMessage}`;
-  
+    
     // Open WhatsApp with the pre-filled message
     window.open(whatsappURL, '_blank');
-  
+    
     // Close the modal
     onClose();
   };

@@ -42,7 +42,7 @@ const Footer = () => {
                         9885234150
                       </p>
                       <p className="text-lg font-semibold text-gray-900 dark:text-white">
-                        9035722357
+                        9035721357
                       </p>
                     </div>
                   </div>
@@ -62,14 +62,7 @@ const Footer = () => {
                   Useful Links
                 </h2>
                 <ul>
-                  <li>
-                    <Link
-                      href="/blog"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Blog
-                    </Link>
-                  </li>
+              
                   <li>
                     <Link
                       href="/faq"
@@ -113,14 +106,7 @@ const Footer = () => {
                       Privacy Policy
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Refund Policy
-                    </Link>
-                  </li>
+           
                 </ul>
               </div>
             </div>
@@ -131,14 +117,7 @@ const Footer = () => {
                   Support & Help
                 </h2>
                 <ul>
-                  <li>
-                    <Link
-                      href="/contact"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Open Support Ticket
-                    </Link>
-                  </li>
+        
                   <li>
                     <Link
                       href="/"

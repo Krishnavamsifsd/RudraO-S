@@ -21,16 +21,10 @@ const AboutUs = () => {
         <div className="container mx-auto px-4">
         <section className="mb-16 text-left">
   <h2 className="mb-6 text-4xl font-extrabold text-blue-600 dark:text-blue-400">
-    About Rudra Overseas
-  </h2>
+  Welcome to Rudra Overseas Educational Consultancy
+    </h2>
   <p className="mx-auto  text-lg leading-relaxed">
-    We&apos;re The Trusted Educational Consultant. Rudra Overseas is
-    the flag bearer in the fields of test preparation, study abroad
-    programmes, and immigration services. As an emerging leader in
-    test preparation, Rudra Overseas takes pride in our high success
-    rate. Through our years of experience in imparting quality
-    coaching services, we have guided thousands of aspirants in
-    achieving their dreams of studying at universities abroad.
+  Established in September 2023, Rudra Overseas Educational Consultancy is dedicated to helping students fulfill their dreams of studying abroad. The consultancy offers comprehensive training and guidance to ensure students are well-prepared for the challenges and opportunities of International Education.
   </p>
 </section>
 
@@ -90,20 +84,50 @@ const AboutUs = () => {
         Our Centers
       </p>
       <div className="space-y-4">
-        <div className="flex items-center rounded-lg bg-white p-4 shadow-lg transition hover:scale-105 hover:shadow-xl dark:bg-gray-800">
+      {/* Card for Guntur */}
+      <div className="flex items-start justify-between rounded-lg bg-white p-4 shadow-lg transition hover:scale-105 hover:shadow-xl dark:bg-gray-800">
+        <div className="flex items-center">
           <FaMapMarkerAlt className="mr-4 text-3xl text-blue-600 dark:text-blue-400" />
           <span className="text-lg font-semibold text-gray-700 dark:text-gray-300">
             Guntur
           </span>
         </div>
-        <div className="flex items-center rounded-lg bg-white p-4 shadow-lg transition hover:scale-105 hover:shadow-xl dark:bg-gray-800">
-          <FaMapMarkerAlt className="mr-4 text-3xl text-blue-600 dark:text-blue-400" />
-          <span className="text-lg font-semibold text-gray-700 dark:text-gray-300">
-            Narsaropet
-            <span className="text-sm text-gray-500">(launch)</span>
-          </span>
+        <div className="text-right">
+          <p className="text-sm text-gray-500 dark:text-gray-400">Lokesh Madineni</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400">9885234150</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400">9035721357</p>
         </div>
       </div>
+
+      {/* Card for Narsaropet */}
+      <div className="flex items-start justify-between rounded-lg bg-white p-4 shadow-lg transition hover:scale-105 hover:shadow-xl dark:bg-gray-800">
+        <div className="flex items-center">
+          <FaMapMarkerAlt className="mr-4 text-3xl text-blue-600 dark:text-blue-400" />
+          <span className="text-lg font-semibold text-gray-700 dark:text-gray-300">
+            Narsaropet <span className="text-sm text-gray-500">(launch)</span>
+          </span>
+        </div>
+        <div className="text-right">
+          <p className="text-sm text-gray-500 dark:text-gray-400">Bandarupalli Subba Rao</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400">9390510101</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400">9885234150</p>
+        </div>
+      </div>
+
+      {/* Card for Kothagudem */}
+      <div className="flex items-start justify-between rounded-lg bg-white p-4 shadow-lg transition hover:scale-105 hover:shadow-xl dark:bg-gray-800">
+        <div className="flex items-center">
+          <FaMapMarkerAlt className="mr-4 text-3xl text-blue-600 dark:text-blue-400" />
+          <span className="text-lg font-semibold text-gray-700 dark:text-gray-300">
+            Kothagudem
+          </span>
+        </div>
+        <div className="text-right">
+          <p className="text-sm text-gray-500 dark:text-gray-400">Madineni Kalpana</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400">8247451462</p>
+        </div>
+      </div>
+    </div>
     </div>
 
     <p className="mb-6 text-lg leading-relaxed text-gray-800 dark:text-gray-300">

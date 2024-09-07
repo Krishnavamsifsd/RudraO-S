@@ -37,9 +37,10 @@ const TimeLine = () => {
                           {step.icon}
                         </div>
                         <div>
-                          <div className="text-lg font-medium text-gray-700">
-                            {step.title}
-                          </div>
+                        <div className="text-base md:text-md font-medium text-gray-700">
+  {step.title}
+</div>
+
                         </div>
                       </div>
                     </div>

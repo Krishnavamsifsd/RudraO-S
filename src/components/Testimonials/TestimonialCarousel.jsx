@@ -29,6 +29,9 @@ import Test23 from "../../../public/images/testimonials/Test23.jpeg";
 import Test24 from "../../../public/images/testimonials/Test24.jpeg";
 import Test25 from "../../../public/images/testimonials/Test25.jpeg";
 import Test26 from "../../../public/images/testimonials/Test26.jpeg";
+import Test27 from "../../../public/images/testimonials/Test27.jpeg";
+import Test28 from "../../../public/images/testimonials/Test28.jpeg";
+import Test29 from "../../../public/images/testimonials/Test29.jpeg";
 import Image from "next/image";
 
 const TestimonialCarousel = () => {
@@ -53,6 +56,9 @@ const TestimonialCarousel = () => {
   };
 
   const testimonialImages = [
+    Test27,
+    Test28,
+    Test29,
     Test1,
     Test2,
     Test3,
