@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 
 const checkIcon = (
@@ -26,22 +26,23 @@ const AboutSectionOne = () => {
           layout="fill"
           objectFit="cover"
           className="w-full h-full"
+          priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-800 via-pink-700 to-red-600 opacity-60"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-800 via-pink-700 to-red-600 opacity-70"></div>
       </div>
       <div className="relative z-10 container mx-auto px-4">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="flex flex-wrap -mx-4 ">
             <div className="w-full px-4 lg:w-3/4">
-              <div className="glassmorphism-container p-8 rounded-lg">
-                <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-lime-400 mb-6 drop-shadow-md">
+              <div className="glassmorphism-container p-6 md:p-8 rounded-lg">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-lime-400 mb-4 md:mb-6 drop-shadow-md">
                   Discover the Excellence of Rudra Overseas
                 </h2>
-                <p className="text-lg text-white mb-6">
+                <p className="text-base md:text-lg text-white mb-4 md:mb-6">
                   At Rudra Overseas, we excel in providing unparalleled services in international trade and logistics. Our commitment is to ensure smooth and efficient global commerce through our expertise and innovative solutions.
                 </p>
 
-                <div className="mb-12 max-w-[570px] lg:mb-0" data-wow-delay=".15s">
+                <div className="mb-8 md:mb-12 max-w-[570px] lg:mb-0" data-wow-delay=".15s">
                   <div className="flex flex-wrap -mx-3">
                     <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
                       <List text="Global Reach" />
@@ -63,19 +64,34 @@ const AboutSectionOne = () => {
       </div>
       <style jsx>{`
         .glassmorphism-container {
-          background: rgba(255, 255, 255, 0.2);
+          background: rgba(0, 0, 128, 0.7); /* Navy background with some transparency */
           backdrop-filter: blur(5px);
           border: 1px solid rgba(255, 255, 255, 0.3);
           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-          background: linear-gradient(
-            to bottom,
-            rgba(255, 255, 255, 0.2),
-            rgba(255, 255, 255, 0)
-          );
         }
         @media (max-width: 768px) {
           .absolute.inset-0.z-0.h-[50vh] {
-            height: 100vh;
+            height: 60vh;
+          }
+          h2 {
+            font-size: 2rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+          .glassmorphism-container {
+            padding: 1.5rem;
+          }
+        }
+        @media (max-width: 480px) {
+          .absolute.inset-0.z-0.h-[50vh] {
+            height: 50vh;
+          }
+          h2 {
+            font-size: 1.75rem;
+          }
+          p {
+            font-size: 0.875rem;
           }
         }
       `}</style>
